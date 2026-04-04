@@ -4,23 +4,23 @@
 class Guts < Formula
   desc "A modern, keyboard-first terminal data explorer for CSV, JSON, and Databases"
   homepage "https://github.com/andev0x/guts"
-  version "1.0.5"
+  version "1.0.6"
   license "MIT"
 
   # Selection logic based on system architecture
   if OS.mac?
     if Hardware::CPU.arm?
       # Apple Silicon (M1/M2/M3/M4)
-      url "https://github.com/andev0x/guts/releases/download/v1.0.4/guts-v1.0.4-aarch64-apple-darwin.tar.gz"
-      sha256 "aaa84f2595da438a13784ad9d3030f8009de9927b8c526a680bb1d07cad6174d"
+      url "https://github.com/andev0x/guts/releases/download/v1.0.6/guts-v1.0.6-aarch64-apple-darwin.tar.gz"
+      sha256 "cf77ed9f45685d5e74a3cf78b381df1d1760401458ff49f0dd44224fd9d2befd"
     else
       # Intel Mac
       odie "The 'guts' formula currently only supports Apple Silicon (ARM) Macs."
     end
   elsif OS.linux?
     # Linux support (Optional but good for WSL users)
-    url "https://github.com/andev0x/guts/releases/download/v1.0.4/guts-v1.0.4-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "694aea241f817ae882df0ade6760010b80a73188edf530ce232dccb6593dfc41"
+    url "https://github.com/andev0x/guts/releases/download/v1.0.6/guts-v1.0.6-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "d1ed50a38127bf87cf9e07b160556719581805d71261ad6012d0300e6324e8a6"
   end
 
   # Installation logic
