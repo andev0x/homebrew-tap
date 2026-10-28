@@ -14,6 +14,7 @@ Use this README as both:
 
 Current formula in this tap:
 - `guts` - terminal data explorer for CSV, JSON, and databases
+- `tnow` - terminal-native language runtime
 
 ## Quick Start
 
@@ -21,7 +22,7 @@ Install from this tap:
 
 ```bash
 brew tap andev0x/tap
-brew install guts
+brew install tnow
 ```
 
 Or install with fully qualified name:
